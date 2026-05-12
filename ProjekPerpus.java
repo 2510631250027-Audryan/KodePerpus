@@ -190,4 +190,16 @@ public class ProjekPerpus {
 
         System.out.println("Data tidak ditemukan.");
     }
+
+    static void cariBuku() {
+ 
+        System.out.println("\n=== MENCARI BUKU ===");
+
+        System.out.println("Masukkan nama buku7 : ");
+        String cari = input.nextLine();
+
+        boolean ditemukan = false;
+
+
+    }
 }
