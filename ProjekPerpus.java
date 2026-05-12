@@ -320,7 +320,6 @@ static void cariKategori() {
 
         for (int j = 0; j < jumlahData - i - 1; j++) {
 
-            // Sorting berdasarkan judul buku
             if (dataBuku[j].judul.compareToIgnoreCase(dataBuku[j + 1].judul) > 0) {
 
                 Buku sementara = dataBuku[j];
