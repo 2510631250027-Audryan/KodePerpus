@@ -62,15 +62,15 @@ public class ProjekPerpus {
     }
 
     static void isiDataAwal() {
-        dataBuku[jumlahData++] = new Buku(1, "Algoritma dan Pemrograman", "Teknologi", 10);
-        dataBuku[jumlahData++] = new Buku(2, "Struktur Data", "Teknologi", 8);
-        dataBuku[jumlahData++] = new Buku(3, "Basis Data", "Teknologi", 12);
-        dataBuku[jumlahData++] = new Buku(4, "Jaringan Komputer", "Teknologi", 7);
-        dataBuku[jumlahData++] = new Buku(5, "Sistem Operasi", "Teknologi", 9);
-        dataBuku[jumlahData++] = new Buku(6, "Pemrograman Java", "Teknologi", 15);
-        dataBuku[jumlahData++] = new Buku(7, "Pemrograman Python", "Teknologi", 11);
-        dataBuku[jumlahData++] = new Buku(8, "Machine Learning", "Teknologi", 6);
-        dataBuku[jumlahData++] = new Buku(9, "Artificial Intelligence", "Teknologi", 5);
+        dataBuku[jumlahData++] = new Buku( 1, "Algoritma dan Pemrograman", "Teknologi", 10);
+        dataBuku[jumlahData++] = new Buku( 2, "Struktur Data", "Teknologi", 8);
+        dataBuku[jumlahData++] = new Buku( 3, "Basis Data", "Teknologi", 12);
+        dataBuku[jumlahData++] = new Buku( 4, "Jaringan Komputer", "Teknologi", 7);
+        dataBuku[jumlahData++] = new Buku( 5, "Sistem Operasi", "Teknologi", 9);
+        dataBuku[jumlahData++] = new Buku( 6, "Pemrograman Java", "Teknologi", 15);
+        dataBuku[jumlahData++] = new Buku( 7, "Pemrograman Python", "Teknologi", 11);
+        dataBuku[jumlahData++] = new Buku( 8, "Machine Learning", "Teknologi", 6);
+        dataBuku[jumlahData++] = new Buku( 9, "Artificial Intelligence", "Teknologi", 5);
         dataBuku[jumlahData++] = new Buku(10, "Data Mining", "Teknologi", 8);
 
         dataBuku[jumlahData++] = new Buku(11, "Laskar Pelangi", "Novel", 20);
