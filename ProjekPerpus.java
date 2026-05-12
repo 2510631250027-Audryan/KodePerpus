@@ -200,6 +200,26 @@ public class ProjekPerpus {
 
         boolean ditemukan = false;
 
+          for (int i = 0; i < jumlahData; i++) {
+
+        if (dataBuku[i].aktif == true &&
+            dataBuku[i].judul.toLowerCase().contains(cari.toLowerCase())) {
+
+            System.out.println("\nBuku ditemukan:");
+            System.out.println("--------------------------------");
+            System.out.println("ID       : " + dataBuku[i].id);
+            System.out.println("Judul    : " + dataBuku[i].judul);
+            System.out.println("Kategori : " + dataBuku[i].kategori);
+            System.out.println("Stok     : " + dataBuku[i].stok);
+
+            ditemukan = true;
+        }
+    }
+
+    if (ditemukan == false) {
+        System.out.println("Buku tidak ditemukan.");
+    }
+
 
     }
 }
