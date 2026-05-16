@@ -37,7 +37,7 @@ class Buku {
                 System.out.println("7. Cari buku berdasarkan kategori");
                 System.out.println("8. Urutkan buku berdasarkan ID");
                 System.out.println("9. urutkan buku berdasarkan judul");
-                System.out.println("10. Keluar");
+                System.out.println("10. Keluar ");
 
                 System.out.print("Pilih menu: ");
 
