@@ -469,6 +469,6 @@ class Buku {
         System.out.println("\n=== COUNTER BUKU ===");
         System.out.println("Total Buku Aktif     : " + totalAktif);
         System.out.println("Total Buku Tersedia  : " + totalTersedia);
-        System.out.println("Total Buku Dipinjam  : " + totalDipinjam);
+        System.out.println("Total Buku yang Dipinjam  : " + totalDipinjam);
     }
 }
