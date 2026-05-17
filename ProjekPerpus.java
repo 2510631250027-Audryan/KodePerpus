@@ -39,9 +39,7 @@ class Buku {
                 System.out.println("7. Cari buku berdasarkan kategori");
                 System.out.println("8. Urutkan buku berdasarkan ID");
                 System.out.println("9. urutkan buku berdasarkan judul (Alphabetical)");
-                System.out.println("10. fitur update status ");
-                System.out.println("11. counter buku ");
-                System.out.println("12. Keluar ");
+                System.out.println("10. Keluar ");
 
                 System.out.print("Pilih menu: ");
 
@@ -76,18 +74,12 @@ class Buku {
                     case 9:
                         selectionSortJudul();
                     case 10:
-                        updateStatus();
-                        break;
-                    case 11:
-                        counterBuku();
-                        break;                   
-                    case 12:
                         System.out.println("Program selesai, Terima Kasih.");
                     default:
                     System.out.println("Pilihan tidak valid.");
                 }
 
-            } while (pilihan != 12);
+            } while (pilihan != 10);
         }
 
         static void isiDataAwal() {
@@ -421,56 +413,5 @@ class Buku {
         }
 
         System.out.println("================================================");
-    }
-    static void updateStatus() {
-
-        System.out.println("\n=== UPDATE STATUS BUKU ===");
-
-        System.out.print("Masukkan ID Buku: ");
-        int id = input.nextInt();
-        input.nextLine();
-
-        for (int i = 0; i < jumlahData; i++) {
-
-            if (dataBuku[i].id == id && dataBuku[i].aktif == true) {
-
-                System.out.println("Status saat ini : " + dataBuku[i].status);
-
-                System.out.print("Masukkan status buku baru (Tersedia/Dipinjam): ");
-                dataBuku[i].status = input.nextLine();
-
-                System.out.println("Status berhasil diupdate.");
-                return;
-            }
-        }
-
-        System.out.println("Buku tidak ditemukan.");
-    }
-         static void counterBuku() {
-
-        int totalAktif = 0;
-        int totalTersedia = 0;
-        int totalDipinjam = 0;
-
-        for (int i = 0; i < jumlahData; i++) {
-
-            if (dataBuku[i].aktif == true) {
-
-                totalAktif++;
-
-                if (dataBuku[i].status.equalsIgnoreCase("Tersedia")) {
-                    totalTersedia++;
-                }
-                if (dataBuku[i].status.equalsIgnoreCase("Dipinjam")) {
-                    totalDipinjam++;
-                }
-                
-            }
-        }
-
-        System.out.println("\n=== COUNTER BUKU ===");
-        System.out.println("Total Buku Aktif     : " + totalAktif);
-        System.out.println("Total Buku Tersedia  : " + totalTersedia);
-        System.out.println("Total Buku yang Dipinjam  : " + totalDipinjam);
     }
 }
