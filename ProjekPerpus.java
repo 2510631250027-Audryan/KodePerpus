@@ -489,7 +489,7 @@ class Buku {
                 if (dataBuku[i].status.equalsIgnoreCase("Dipinjam")) {
                     totalDipinjam++;
                 }
-                //revisi
+                //revisian
             }
         }
 
